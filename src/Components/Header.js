@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import { useStateValue } from './StateProvider';
-function Header() {
+import {MenuItems}from '../../src/Components/Data'
+function Header({ handleChange}) {
     const[{cart},dispatch] = useStateValue();
+    
 
     useEffect(() => {
         const toggleIcon = document.querySelector('.toggleMenu');
@@ -17,7 +19,7 @@ function Header() {
         <img src="https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Flogo.png?alt=media&token=fc228623-ef27-4af4-8ea5-b9ebeeaf47dc" alt='' className='logo'/>
         <div className='inputBox'>
         <SearchRoundedIcon className="searchIcon"/>
-        <input type='text' placeholder='Search'/>
+        <input type='text' placeholder='Search' onChange={handleChange} />
         </div>
 
         <div className='shoppingCart'>

@@ -19,7 +19,17 @@ import CartItem from './Components/CartItem';
 import { useStateValue } from './Components/StateProvider';
 
 function App() {
-  const[rightMenuPop, setrightMenuPop] = useState(false);
+  const[searchItem, setSearchItem] = useState("");
+
+    const filterData = MenuItems.filter((item=>{
+        return(
+            item.name.toLowerCase().includes(searchItem.toLowerCase())
+        );
+    }))
+
+    const handleChange = (e) =>{
+        setSearchItem(e.target.value);
+    }
   
   const [{cart,total}, dispatch] = useStateValue();
   const [totalPrice, setTotalPrice] = useState(0);
@@ -57,7 +67,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <Header handleChange={handleChange}/>
 
       <main>
         <div className='mainContainer'>
@@ -72,7 +82,7 @@ function App() {
              <div className='rowContainer'>
                
                {
-                MenuItems && MenuItems.map(data => (
+                filterData && filterData.map(data => (
                   <div key={data.id} onClick={()=>setData(data.itemId)}>
                 <MenuCard imgSrc={data.imgSrc} name={data.name} isActive = {data.id === 1 ? true : false}/>
               </div>
