@@ -30,8 +30,16 @@
 <li>Redux</li>
 </ul>
 
-<h2>Screenshots of Web Application</h2>
-<div align ="center" style="display:block;"><img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/4addc292-d707-4b2e-a89c-2a0d6a68104f" alt="" align="center"  style="height: 420px; width: 420px; "><img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/3925fbb2-2c79-4610-bd17-df77eba5502e" alt="" style="height: 520px; width: 220px; margin-bottom: 30px "><img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/2f7133e4-6e8b-407d-8b5d-fca2e1960a77" alt="" align="center"  style="height: 520px; width: 220px; margin-bottom: 30px "> <img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/be0d39a8-2f17-4596-8f84-71545597c292" alt="" align="center"  style="height: 520px; width: 220px; margin-bottom: 30px "> 
+<h2>Screenshots</h2>
+
+ <h3>Web View </h3>
+<img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/4addc292-d707-4b2e-a89c-2a0d6a68104f" alt="" align="center"  style="height: 420px; width: 520px;"><br/>
+<br/>
+<h3>Mobile view </h3>
+<img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/3925fbb2-2c79-4610-bd17-df77eba5502e" alt="" align="center" style="height: 520px; width: 220px; margin-right: 80px  ">
+
+<img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/2f7133e4-6e8b-407d-8b5d-fca2e1960a77" alt="" align="center"  style="height: 520px; width: 220px; margin-bottom: 30px; "> 
+<img src="https://github.com/ayushi-2208/Food-Delivery/assets/69577773/be0d39a8-2f17-4596-8f84-71545597c292" alt="" align="center"  style="height: 520px; width: 220px; margin-bottom: 30px; ">
 <h2>Usage Instructions</h2>
 
 You can go through the project by Navigating to `/src/Components/`. <br/>
