@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+<h1>Food Delivery</h1>
+<hr><p>It is a fast food responsive website which contains a different menu categories and show data accordingly. In this application redux also used for provide any state or method for its cart-Item component to share data. We can also add and remove items in cart and show item count in cart symbol in header.
+</p><h2>General Information</h2>
+<hr><ul>
+<li>The fast food responsive website is designed to provide users with a convenient way to browse through various menu categories and view data accordingly. The website utilizes Redux, a popular state management library, to facilitate the sharing of data and methods among components, particularly the cart-item component. </li>
+</ul><ul>
+<li>The website features different menu categories, such as appetizers, burger, drinks, and pizzas, among others. Each category contains a list of food items along with their corresponding details, such as name, description, price, and an option to add them to the cart.</li>
+</ul>
+<ul>
+<li>When a user adds an item to the cart, Redux comes into play. Redux stores the state of the cart, including the selected food items, quantities, and total price. This centralized state management allows multiple components to access and modify the cart's data without directly passing it between components. The cart-item component, for instance, can retrieve the current cart state from Redux and display the items in the cart along with their quantities.</li>
+</ul><ul>
+<li>users have the ability to remove items from the cart. When an item is removed, the Redux store is updated accordingly, reflecting the changes in the cart's state. This ensures that the cart-item component and other components relying on cart data are automatically updated.</li>
+</ul>
+<ul>
+<li>By utilizing Redux for state management and data sharing, the fast food responsive website provides a seamless and efficient way for users to navigate the menu, add and remove items from their cart, and view the cart's contents. The use of Redux ensures that the cart's state remains consistent across different components, enabling a smooth and synchronized user experience.</li>
+</ul>
+<h2>Technologies Used</h2>
+<hr><ul>
+<li>HTML</li>
+</ul><ul>
+<li>CSS</li>
+</ul><ul>
+<li>JavaScript</li>
+</ul><ul>
+<li>React JS</li>
+</ul><ul>
+<li>JSON</li>
+</ul>
+<ul>
+<li>Redux</li>
+</ul>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Screenshots of Web Application</h2>
+<div align ="center" style="display:block;"><img src="Screenshot/Screenshot (128).png" alt="" align="center"  style="height: 420px; width: 420px; "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(129).png" alt="" style="height: 420px; width: 420px; margin-bottom: 30px "><img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(130).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(131).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px "> <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(132).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px ">  <img src="https://github.com/ayushi-2208/NetflixClone/blob/master/Screenshots/Screenshot%20(134).png" alt="" align="center"  style="height: 420px; width: 420px; margin-bottom: 30px ">  </div>
+<h2>Usage Instructions</h2>
 
-## Available Scripts
+You can go through the project by Navigating to `/src/Components/`. <br/>
+<ul>
+<li>
+There you can see in components:-<br/>
+- BannerName<br/>
+- CartItem<br/>
+- DebitCard<br/>
+- Header<br/>
+- ItemCard<br/>
+- MenuCard<br/>
+- MenuContainer<br/>
+- SubmenuContainer<br/>
+</li></ul>
+<ul>
+<li>
+ we have reducer file also <br/>
+- reducer.js (which contains the state management data)<br/>
+and also we have set the state using stateprovider.js file. <br/>
+and also one tab folder which is used for the tab change in landing page
+they all have their own js and scss file.
+</li></ul>
+<ul>
+<li>
+We have one data.js file which contains JSON data with different categories.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Deployment</h2>
+<a href="https://ayushi-2208.github.io/Food-Delivery/">👉Project Link</a>
